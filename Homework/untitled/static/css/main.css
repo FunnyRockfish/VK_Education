@@ -1,0 +1,218 @@
+
+main > .container {
+    padding: 80px 15px 0;
+}
+
+.QHeader {
+    font-size: 30px;
+    font-family: Roboto, sans-serif;
+}
+
+.question {
+    border: 2px solid dodgerblue;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    background-color: ivory;
+}
+
+.question-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Максимальное количество строк, которое будет отображено */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.question-title-FULL {
+    font-size: 30px;
+    font-family: "PT Astra Sans";
+    max-width: 150px;
+    max-height: 100px;
+    font-weight: bold;
+}
+
+.question-text-FULL {
+    font-style: italic;
+}
+
+.question-avatar {
+    max-width: 90%;
+    height: auto;
+}
+
+.question-title {
+    font-size: 30px;
+    font-family: "PT Astra Sans";
+    max-width: 150px;
+    max-height: 100px;
+    font-weight: bold;
+    transition: color 0.3s;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.question-title:hover {
+    font-size: 36px; /* Увеличенный размер шрифта при наведении мыши */
+}
+
+.question-title:hover {
+    color: darkorange; /* Цвет при наведении мыши */
+}
+
+.like {
+    margin-top: 30px;
+}
+
+.Heart {
+    margin-top: 32px;
+    height: 20px;
+    margin-left: 12px; /* Добавляем небольшой отступ между изображением и текстом */
+}
+
+.tags {
+    margin-top: 30px;
+}
+
+.tagsOnDashboard {
+    border: 2px solid darkorange;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* гарантирует, что блок не будет шире своего родителя */
+    margin: 0 auto; /* центрирует блок по горизонтали */
+}
+.OneTag {
+    margin: 5px;
+}
+
+
+.list-group-item:nth-child(1) {
+    background-color: #6edff6; /* Яркий цвет для первого элемента */
+}
+
+.list-group-item:nth-child(2) {
+    background-color: hsl(180, 100%, 60%); /* Более тусклый */
+}
+
+.list-group-item:nth-child(3) {
+    background-color: hsl(180, 100%, 70%); /* Тусклый */
+}
+
+.list-group-item:nth-child(4) {
+    background-color: hsl(180, 100%, 80%); /* Еще тусклый */
+}
+
+.list-group-item:nth-child(5) {
+    background-color: hsl(180, 100%, 90%); /* Самый тусклый */
+}
+
+.TopUsers {
+    border: 2px solid darkorange;
+    width: 250px;
+}
+
+.bg-darkorange {
+    background-color: darkorange;
+    color: white; /* Если нужно изменить цвет текста для лучшей видимости */
+}
+
+.dropdown {
+    margin-left: 8px;
+}
+
+.answer-avatar {
+    max-width: 80%;
+    margin-top: 0px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.answer {
+    border: 3px solid darkorange;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    background-color: #9eeaf9;
+    background-color: mintcream;
+}
+
+.likeIt {
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+/* Ваш текущий CSS */
+.request-text {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+}
+
+/* Новые стили для текстового поля */
+.request-text textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.register-text {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 600px; /* Ограничение максимальной ширины, чтобы контент не растягивался слишком сильно */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 15px; /* Увеличил отступы для лучшего визуального эффекта */
+    border-radius: 8px;
+    resize: vertical;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Плавный переход для изменений размеров */
+
+}
+
+/* Дополнительные стили для textarea */
+.register-text textarea {
+    width: 100%;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: mintcream;
+    transition: border-color 0.3s ease; /* Плавный переход для изменения цвета границы */
+}
+
+/* Стиль при фокусе */
+.register-text textarea:focus {
+    border-color: #007bff; /* Цвет границы при фокусе */
+    outline: none; /* Убираем стандартное выделение */
+}
+
+.TextOnCreateQuestion {
+    margin-top: 13px;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.CreateButton {
+    max-width: 250px;
+    font-size: 30px;
+}
+
+
+.ChooseImage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
