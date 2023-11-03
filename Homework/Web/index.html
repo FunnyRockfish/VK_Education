@@ -1,0 +1,131 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h1 class="QHeader">New Questions</h1>
+
+{% for question in questions %}
+
+{% include 'components/question-item.html' %}
+
+{% endfor %}
+
+
+<div class="row question">
+    <div class="col-3">
+        <img src="../static/sources/avatar1.png" alt="" class="question-avatar">
+    </div>
+    <div class="col-9">
+        <div class="question-title">Quest #1</div>
+        <div class="question-text">Как можно улучшить адаптивность веб-страницы для мобильных устройств
+            и планшетов? Какие техники и инструменты вы предпочитаете использовать при разработке
+            мобильно-дружелюбного интерфейса?
+        </div>
+        <div class="row RightPart">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="tags">Tags:</div>
+                    </div>
+                    <div class="col-7">
+                        <div class="tags">
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 likeIt text-center">
+                <button type="button" class="btn btn-outline-danger like-button ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <span class="like-text">Like it!  <span class="badge likeCounter">4</span> </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row question">
+    <div class="col-3">
+        <img src="../static/sources/avatar1.png" alt="" class="question-avatar">
+    </div>
+    <div class="col-9">
+        <div class="question-title">Quest #2</div>
+        <div class="question-text">Какие подходы вы используете для оптимизации производительности
+            веб-приложений? Какие инструменты и стратегии предпочтительны при работе с загрузкой
+            страницы, управлением ресурсами и повышением отзывчивости пользовательского интерфейса?
+        </div>
+        <div class="row RightPart">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="tags">Tags:</div>
+                    </div>
+                    <div class="col-7">
+                        <div class="tags">
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 likeIt text-center">
+                <button type="button" class="btn btn-outline-danger like-button ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <span class="like-text">Like it!  <span class="badge likeCounter">4</span> </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row question">
+    <div class="col-3">
+        <img src="../static/sources/avatar1.png" alt="" class="question-avatar">
+    </div>
+    <div class="col-9">
+        <div class="question-title">Quest #3</div>
+        <div class="question-text">Как вы обеспечиваете безопасность веб-приложений? Какие методы вы
+            используете для защиты от атак, таких как инъекции, перехват данных и межсайтовые атаки? Как
+            ваши решения соотносятся с современными стандартами безопасности?
+        </div>
+        <div class="row RightPart">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="tags">Tags:</div>
+                    </div>
+                    <div class="col-7">
+                        <div class="tags">
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 likeIt text-center">
+                <button type="button" class="btn btn-outline-danger like-button ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <span class="like-text">Like it!  <span class="badge likeCounter">4</span> </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

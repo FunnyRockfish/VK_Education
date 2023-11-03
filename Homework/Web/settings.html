@@ -1,0 +1,68 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+<h1>Settings: User X</h1>
+<div class="row">
+    <div class="col-2">
+        <div class="TextOnCreateQuestion">
+            Login
+        </div>
+    </div>
+    <div class="col-10">
+        <form action="/submit" method="post">
+            <!-- Textarea for entering the answer -->
+            <div class="register-text">
+                <textarea id="title" name="answer" rows="1" cols="60" required></textarea>
+            </div>
+        </form>
+
+    </div>
+    <div class="col-2">
+        <div class="TextOnCreateQuestion">
+            E-Mail
+        </div>
+    </div>
+    <div class="col-10">
+        <form action="/submit" method="post">
+            <!-- Textarea for entering the answer -->
+            <div class="register-text">
+                <textarea id="Text" name="answer" rows="1" cols="60" required></textarea>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-2">
+        <div class="TextOnCreateQuestion">
+            Nick
+        </div>
+    </div>
+    <div class="col-10">
+        <form action="/submit" method="post">
+            <!-- Textarea for entering the answer -->
+            <div class="register-text">
+                <textarea id="tags" name="answer" rows="1" cols="60" required></textarea>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-3">
+        <div class="TextOnCreateQuestion">
+            Profile Image
+        </div>
+    </div>
+    <div class="col-9">
+        <div class="ChooseImage">
+            <input type="file" id="imageInput" accept="image/*">
+            <img id="previewImage" alt="Preview">
+        </div>
+    </div>
+
+    <div class="col-3">
+
+    </div>
+    <div class="col-9">
+        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+</div>
+{% endblockю %}

@@ -1,9 +1,7 @@
-{% load static %}
-
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
 <meta charset="UTF-8">
-<link href="{% static 'css/bootstrap/bootstrap.css' %}" rel="stylesheet">
+<link href="../static/css/bootstrap/bootstrap.css" rel="stylesheet">
 <script src="../static/js/bootstrap/bootstrap.js"></script>
 <script src="../static/js/bootstrap/bootstrap.bundle.js"></script>
 
@@ -88,7 +86,7 @@
 
 
 <!-- Custom styles for this template -->
-<link href="{% static '/css/main.css' %}" rel="stylesheet">
+<link href="../static/css/main.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column h-100">
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -164,7 +162,7 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-darkorange">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'index' %}">Task&Ask</a>
+            <a class="navbar-brand" href="#">Task&Ask</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -209,49 +207,101 @@
 <main class="flex-shrink-0">
     <div class="container">
         <div class="row">
-            <div class="col-8">
-                {% block content %}
-                    Hello, its empty block
-                {% endblock %}
+            <div class="col-5">
+                <h1>Register</h1>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="TextOnCreateQuestion">
+                            Login
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <form action="/submit" method="post">
+                            <!-- Textarea for entering the answer -->
+                            <div class="register-text">
+                                <textarea id="title" name="answer" rows="1" cols="60" required></textarea>
+                            </div>
+                        </form>
 
-            </div>
-            <div class="col-4">
-                <h2 class="text-center"> Popular Tags</h2>
-                <div class="tagsOnDashboard text-center">
-                    <span class=" badge bg-primary OneTag">Python</span>
-                    <span class="badge bg-secondary OneTag">C++</span>
-                    <span class="badge bg-success OneTag">Go</span>
-                    <span class="badge bg-danger OneTag">CSS</span>
-                    <span class="badge bg-dark OneTag">Voloshin</span>
+                    </div>
+                    <div class="col-4">
+                        <div class="TextOnCreateQuestion">
+                            E-Mail
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <form action="/submit" method="post">
+                            <!-- Textarea for entering the answer -->
+                            <div class="register-text">
+                                <textarea id="Text" name="answer" rows="1" cols="60" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="TextOnCreateQuestion">
+                            Nick
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <form action="/submit" method="post">
+                            <!-- Textarea for entering the answer -->
+                            <div class="register-text">
+                                <textarea id="tags" name="answer" rows="1" cols="60" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="TextOnCreateQuestion">
+                            Profile Image
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="ChooseImage">
+                            <input type="file" id="imageInput" accept="image/*">
+                            <img id="previewImage" alt="Preview">
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+
+                    </div>
+                    <div class="col-9">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                 </div>
-                </Br>
-                <h2 class="text-center"> Top Active</h2>
-                <ul class="list-group TopUsers">
-                    <li class="list-group-item text-center TopOneUser">User_1</li>
-                    <li class="list-group-item text-center TopOneUser">User_2</li>
-                    <li class="list-group-item text-center TopOneUser">User_3</li>
-                    <li class="list-group-item text-center TopOneUser">User_4</li>
-                    <li class="list-group-item text-center TopOneUser">User_5</li>
-                </ul>
+
             </div>
 
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-6">
+
+                    </div>
+                    <div class="col-6">
+                        <h2 class="text-center"> Popular Tags</h2>
+                        <div class="tagsOnDashboard text-center">
+                            <span class=" badge bg-primary OneTag">Python</span>
+                            <span class="badge bg-secondary OneTag">C++</span>
+                            <span class="badge bg-success OneTag">Go</span>
+                            <span class="badge bg-danger OneTag">CSS</span>
+                            <span class="badge bg-dark OneTag">Voloshin</span>
+                        </div>
+                        </Br>
+                        <h2 class="text-center"> Top Active</h2>
+                        <ul class="list-group TopUsers">
+                            <li class="list-group-item text-center TopOneUser">User_1</li>
+                            <li class="list-group-item text-center TopOneUser">User_2</li>
+                            <li class="list-group-item text-center TopOneUser">User_3</li>
+                            <li class="list-group-item text-center TopOneUser">User_4</li>
+                            <li class="list-group-item text-center TopOneUser">User_5</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
     </div>
@@ -265,9 +315,6 @@
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
-<script src="{% static '/js/bootstrap.js' %}">
-</script>
 
 </body>
 </html>

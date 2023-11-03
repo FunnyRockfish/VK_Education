@@ -1,0 +1,36 @@
+{% load static  %}
+
+<div class="row question">
+    <div class="col-3">
+        <img src="{% static 'sources/avatar1.png' %}" alt="" class="question-avatar">
+    </div>
+    <div class="col-9">
+        <div class="question-title"><a href="{% url 'question' question_id=question.id %}">{{question.title}}</a></div>
+        <div class="question-text">{{question.content}}
+        </div>
+        <div class="row RightPart">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="tags">Tags:</div>
+                    </div>
+                    <div class="col-7">
+                        <div class="tags">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 likeIt text-center">
+                <button type="button" class="btn btn-outline-danger like-button ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <span class="like-text">Like it!  <span class="badge likeCounter">4</span> </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

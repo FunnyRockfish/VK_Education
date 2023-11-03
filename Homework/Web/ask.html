@@ -1,0 +1,57 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+<h1>New Question</h1>
+<div class="row">
+    <div class="col-1">
+        <div class="TextOnCreateQuestion">
+            Title
+        </div>
+    </div>
+    <div class="col-11">
+        <form action="/submit" method="post">
+            <!-- Textarea for entering the answer -->
+            <div class="register-text">
+                <textarea id="title" name="answer" rows="1" cols="60" required></textarea>
+            </div>
+        </form>
+
+    </div>
+    <div class="col-1">
+        <div class="TextOnCreateQuestion">
+            Text
+        </div>
+    </div>
+    <div class="col-11">
+        <form action="/submit" method="post">
+            <!-- Textarea for entering the answer -->
+            <div class="register-text">
+                <textarea id="Text" name="answer" rows="10" cols="60" required></textarea>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-1">
+        <div class="TextOnCreateQuestion">
+            Title
+        </div>
+    </div>
+    <div class="col-11">
+        <form action="/submit" method="post">
+            <!-- Textarea for entering the answer -->
+            <div class="register-text">
+                <textarea id="tags" name="answer" rows="1" cols="60" required></textarea>
+            </div>
+        </form>
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <button type="button" class="btn btn-primary bg-darkorange text-center CreateButton">
+                Create Quest!
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
